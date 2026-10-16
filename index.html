@@ -6,11 +6,11 @@
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Apeiron Evolution Theory — Part II — Frank Myonk</title>
-<meta name="description" content="Apeiron Evolution Theory, Part II — Active Application. Beyond Infinity. Before Measure. A theoretical framework by Frank Myonk.">
+<meta name="description" content="Apeiron Evolution Theory, Part II. Beyond Infinity. Before Measure. A theoretical framework by Frank Myonk.">
 <meta name="author" content="Frank Myonk">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Apeiron Evolution Theory — Part II: Active Application">
-<meta property="og:description" content="Apeiron Evolution Theory, Part II — Active Application. Beyond Infinity. Before Measure. A theoretical framework by Frank Myonk.">
+<meta property="og:title" content="Apeiron Evolution Theory — Part II">
+<meta property="og:description" content="Apeiron Evolution Theory, Part II. Beyond Infinity. Before Measure. A theoretical framework by Frank Myonk.">
 <meta property="og:image" content="https://frankmyonk.github.io/apeiron-evolution-theory/images/apeiron-part-2-hero.jpg">
 <meta property="og:url" content="https://frankmyonk.github.io/apeiron-evolution-theory/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -140,23 +140,32 @@
   /* ---------- end ---------- */
   .end{border-top:1px solid var(--rule);padding-block:clamp(56px,8vw,112px)}
   .end .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,6vw,96px);align-items:end}
-  .end .h2{
+  .end .close{font-size:clamp(22px,2.4vw,32px);font-weight:200;line-height:1.4;margin:0;max-width:26ch}
+  .end .facts{margin:0}
+  /* ---------- next / previous part (as "Next project") ---------- */
+  .next{display:block;border-top:1px solid var(--rule);padding-block:clamp(32px,4vw,56px) clamp(56px,7vw,96px);text-decoration:none}
+  .next .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(24px,4vw,64px);align-items:center}
+  .next .h2{
     font-family:var(--display);
     font-weight:700;
     text-transform:uppercase;
     font-size:clamp(40px,5vw,64px);
     letter-spacing:.04em;
     line-height:1;
-    margin:0;
+    margin:0 0 10px;
+    transition:color .2s;
   }
-  .end .facts{margin:0}
+  .next:hover .h2{color:var(--mid)}
+  .next .meta{margin:0;font-size:14px;color:var(--mid)}
+  .next-img{aspect-ratio:3/2;overflow:hidden;background:var(--panel);padding:5% 7%}
+  .next-img img{width:100%;height:100%;object-fit:contain}
   .foot{border-top:1px solid var(--rule);padding-block:28px;font-size:13px;color:var(--soft)}
   .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   .foot a{text-decoration:none;transition:color .2s}
   .foot a:hover{color:var(--ink)}
 
   @media (max-width:900px){
-    .p-info,.sec-grid,.end .wrap{grid-template-columns:1fr}
+    .p-info,.sec-grid,.end .wrap,.next .wrap{grid-template-columns:1fr}
     .p-hero--img{height:auto;padding:24px var(--gutter)}
     .p-hero--img img{height:auto}
     .sec-head{position:static}
@@ -178,7 +187,7 @@
     <a class="mark" href="https://frankmyonk.github.io/">Frank Myonk</a>
     <ul class="menu">
       <li><a href="#contents">Contents</a></li>
-      <li class="opt"><a href="https://whispersofthedreamer.blogspot.com/2026/06/apeiron-evolution-theory-paste-this.html">Part I</a></li>
+      <li class="opt"><a href="part-1/">Part I</a></li>
       <li><a href="https://frankmyonk.github.io/">Portfolio</a></li>
     </ul>
   </div>
@@ -186,12 +195,12 @@
 
 <main>
   <div class="p-hero p-hero--img">
-    <img src="images/apeiron-part-2-hero.jpg" width="2000" height="1116" alt="Apeiron Evolution Theory, Part II — a metaphysical visualization">
+    <img src="images/apeiron-part-2-hero.jpg" width="2000" height="1116" alt="Apeiron Evolution Theory — Part II — a metaphysical visualization">
   </div>
 
   <section class="p-info wrap" id="contents">
     <div>
-      <p class="kicker">Theoretical framework &middot; Working edition</p>
+      <p class="kicker">Theoretical Framework &middot; Working Edition</p>
       <h1>Apeiron Evolution Theory</h1>
       <p class="gloss"><strong>Part II &mdash; Active Application.</strong> Beyond Infinity. Before Measure.</p>
     </div>
@@ -199,7 +208,7 @@
       <dl class="facts">
         <dt>Author</dt><dd>Frank Myonk</dd>
         <dt>Part II</dt><dd>&sect;7&ndash;16 &middot; working version</dd>
-        <dt>Part I</dt><dd><a href="https://whispersofthedreamer.blogspot.com/2026/06/apeiron-evolution-theory-paste-this.html">&sect;1&ndash;6</a></dd>
+        <dt>Part I</dt><dd><a href="part-1/">&sect;1&ndash;6 &rarr;</a></dd>
       </dl>
       <p class="desc">This continues the framework of Part I (&sect;1&ndash;6). Part I described how the measurable is born; Part II applies the description. It remains a philosophical framework, not proven physics. Where it touches technology, it offers a direction &mdash; it does not build devices.</p>
       <p class="label">Contents</p>
@@ -838,14 +847,24 @@ The archive remains.</p>
 
   <section class="end">
     <div class="wrap">
-      <p class="h2">The archive remains.</p>
+      <p class="close">The archive remains.</p>
       <dl class="facts">
-        <dt>Edition</dt><dd>Working version &middot; &sect;7&ndash;16</dd>
-        <dt>Part I</dt><dd><a href="https://whispersofthedreamer.blogspot.com/2026/06/apeiron-evolution-theory-paste-this.html">&sect;1&ndash;6 &rarr;</a></dd>
+        <dt>Edition</dt><dd>Working version &middot; &sect;7&ndash;16 &middot; Part I: &sect;1&ndash;6</dd>
         <dt>First published</dt><dd><a href="https://whispersofthedreamer.blogspot.com/2026/07/aet-bg040810-inke8e2d6-goldc9a54c.html">Whispers of the Dreamer &rarr;</a></dd>
       </dl>
     </div>
   </section>
+
+  <a class="next" href="part-1/">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Previous</p>
+        <p class="h2">Part I &mdash; Beyond Infinity</p>
+        <p class="meta">&sect;1&ndash;6</p>
+      </div>
+      <div class="next-img"><img src="images/apeiron-part-1-hero.jpg" width="2000" height="1116" alt="" loading="lazy"></div>
+    </div>
+  </a>
 </main>
 
 <footer class="foot">
